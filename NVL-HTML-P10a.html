@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Creación de un formulario</title>
+	</head>	
+	<body>
+		<h1>Creación de un formulario</h1>
+
+<form method="post" action="miservidor.php">
+	<div>
+      <label for=”codigo_postal”>Código postal:</label>
+      <input id=”codigo_postal” type=”number”>
+    </div>
+
+    <div>
+    	<label for=”nivel_satisfaccion”>Nivel de satisfacción:</label>
+    	<!--input id=”nivel_satisfaccion type="range" min="1" max="5"-->
+    	<select id=”nivel_satisfaccion”>
+        <option value=”1”>1</option>
+        <option value=”2”>2</option>
+        <option value=”3”>3</option>
+        <option value=”4”>4</option>
+        <option value=”5”>5</option>
+      </select>
+    </div>
+
+	<div>
+      <label for=”email”>Email:</label>
+      <input id=”email” type=”email”>
+    </div>
+    <br><br>
+    <div>
+    <label for=”puntos_positivos”>Puntos positivos del producto:</label>
+   		<textarea id=”puntos_positivos”></textarea>
+  	</div>
+
+  	<div>
+    <label for=”puntos_negtivos”>Puntos negativos del producto:</label>
+   		<textarea id=”puntos_negativos”></textarea>
+  	</div>
+
+  	<div>
+      <label for=”serv_entrega”>Servicio de entrega:</label>
+      <select id=”serv_entrega”>
+        <option value=”exc”>Excelente</option>
+        <option value=”bue”>Bueno</option>
+        <option value=”reg”>Regular</option>
+        <option value=”pes”>Pésimo</option>
+      </select>
+  	</div>
+
+  	<div>
+  	<label for=”serv_entrega”>Servicio de entrega:</label>
+  		<input type="checkbox" name="">Excelente
+  		<input type="checkbox" name="">Bueno
+  		<input type="checkbox" name="">Regular
+  		<input type="checkbox" name="">Pésimo
+  	</div>
+  	<br>
+  	<input type=”submit” value=”Enviar”>
+
+</form>
+</body>
+</html>
